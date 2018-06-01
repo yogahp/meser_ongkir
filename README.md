@@ -1,8 +1,8 @@
 # MeserOngkir
 
-MeserOngkir is a clean, powerful, customizable and sophisticated shipping cost plugin for Rails 5+
+MeserOngkir is a clean, powerful, customizable and sophisticated shipping cost plugin for Rails 5+ based on [RajaOngkir.com](https://rajaongkir.com)
 
-## Installation
+## Getting started
 
 Add this line to your application's Gemfile:
 
@@ -17,10 +17,11 @@ And then execute:
 Or install it yourself as:
 
     $ gem install meser_ongkir
-
-## Usage
-
-TODO: Write usage instructions here
+    
+Get API Key from [https://rajaongkir.com/](https://rajaongkir.com/) and place it in your `.env` as:
+```ruby
+export MESER_ONGKIR_API_KEY=<your-api-key>
+```
 
 ## Development
 

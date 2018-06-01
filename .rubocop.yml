@@ -2,6 +2,12 @@ Metrics/BlockLength:
   Enabled: true
   Exclude:
     - 'meser_ongkir.gemspec'
+    - 'spec/meser_ongkir/starter/*.rb'
 
 Style/Documentation:
   Enabled: false
+
+Metrics/LineLength:
+  Enabled: true
+  Exclude:
+    - 'spec/meser_ongkir/starter/*.rb'
