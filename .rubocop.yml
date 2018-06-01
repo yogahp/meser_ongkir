@@ -1,0 +1,7 @@
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'meser_ongkir.gemspec'
+
+Style/Documentation:
+  Enabled: false
