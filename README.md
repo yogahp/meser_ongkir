@@ -1,5 +1,7 @@
 # MeserOngkir
 
+[![Gem Version](https://badge.fury.io/rb/meser_ongkir.svg)](https://badge.fury.io/rb/meser_ongkir) [![Build Status](https://travis-ci.org/yogahp/meser_ongkir.svg?branch=master)](https://travis-ci.org/yogahp/meser_ongkir) [![Maintainability](https://api.codeclimate.com/v1/badges/832c619e0879c862e148/maintainability)](https://codeclimate.com/github/yogahp/meser_ongkir/maintainability) [![Inch CI](http://inch-ci.org/github/yogahp/meser_ongkir.svg)](http://inch-ci.org/github/yogahp/meser_ongkir)
+
 MeserOngkir is a clean, powerful, customizable and sophisticated shipping cost plugin for Rails 5+ based on [RajaOngkir.com](https://rajaongkir.com)
 
 ## Getting started
