@@ -1,4 +1,4 @@
-require 'pry'
+# frozen_string_literal: true
 
 RSpec.describe MeserOngkir::Starter::Province do
   describe 'should get all listed province' do
@@ -25,6 +25,7 @@ RSpec.describe MeserOngkir::Starter::Province do
       it do
         provinces['rajaongkir']['results'].each do |result|
           expect(result['province_id']).to be_truthy
+          expect(result['province']).to be_truthy
         end
       end
     end

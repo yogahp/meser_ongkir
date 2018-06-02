@@ -6,16 +6,14 @@ require 'json'
 
 module MeserOngkir
   class Starter
-    class Province < MeserOngkir::Starter
+    class City < MeserOngkir::Starter
       class << self
         def all
           call_api
         end
 
-        # Find province by province ID
-        # example: MeserOngkir::Starter::Province.find(1)
-        def find(id)
-          call_api(id: id)
+        def find_by(params)
+          call_api(params)
         end
 
         private
@@ -26,7 +24,7 @@ module MeserOngkir
         end
 
         def main_path
-          :province
+          :city
         end
       end
     end
