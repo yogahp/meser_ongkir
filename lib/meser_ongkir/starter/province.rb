@@ -12,8 +12,13 @@ module MeserOngkir
           call_api
         end
 
-        # Find province by province ID
-        # example: MeserOngkir::Starter::Province.find(1)
+        # Returns response of province object
+        #
+        # ==== Params
+        #   id = Province ID
+        #
+        # ==== Examples
+        #   MeserOngkir::Starter::Province.find(1)
         def find(id)
           call_api(id: id)
         end
