@@ -6,6 +6,15 @@ require 'openssl'
 
 module MeserOngkir
   class Api
+    # Creating new object
+    #
+    # @param
+    #   account_type [String] it could be :starter
+    #   main_path [String] it could be :city, :province
+    #   params [Hash] it could be { id: id city / id province, province: id province }
+    #
+    # @example
+    #   MeserOngkir::Api.new(account_type, main_path, params)
     def initialize(account_type, main_path, params)
       @account_type = account_type
       @main_path = main_path

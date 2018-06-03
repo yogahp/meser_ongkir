@@ -6,19 +6,42 @@ require 'json'
 
 module MeserOngkir
   class Starter
+    # Class for get province using starter account
     class Province < MeserOngkir::Starter
       class << self
+        # Get all province
+        #
+        # @example
+        #   MeserOngkir::Starter::Province.all
+        #
+        # @return
+        # {
+        #   "rajaongkir": {
+        #     "query": { ... },
+        #     "status": { ... },
+        #     "results": { ... }
+        #   }
+        # }
         def all
           call_api
         end
 
-        # Returns response of province object
+        # Find province by province ID
         #
-        # ==== Params
-        #   id = Province ID
+        # @param
+        #   id [integer] Province ID
         #
-        # ==== Examples
-        #   MeserOngkir::Starter::Province.find(1)
+        # @example
+        #   MeserOngkir::Starter::Province.find(id)
+        #
+        # @return
+        # {
+        #   "rajaongkir": {
+        #     "query": { ... },
+        #     "status": { ... },
+        #     "results": { ... }
+        #   }
+        # }
         def find(id)
           call_api(id: id)
         end
